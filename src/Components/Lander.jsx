@@ -12,8 +12,8 @@ const Lander = () => {
         <h1>Hey, Pal.</h1>
 
         <p>
-            This website is many things. A proposal on one hand, a plea on the other, an opportunity in a third, unattached hand, and,
-            one could say, a bordering-upon-desparate attempt to move out of NYC and into a Real Home in the fourth, last hand.
+            This website is many things. A proposal on one hand, a plea on the other, an opportunity on the third, unattached hand, and,
+            one could say, a bordering-upon-desparate attempt to move out of NYC and into a Real Home on the fourth, last hand.
             <br /><br/> Before we get into it, won't you stroll down memory lane with me?
         </p>
 

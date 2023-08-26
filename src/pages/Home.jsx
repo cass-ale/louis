@@ -2,6 +2,7 @@ import React, {useRef} from "react";
 import Header from "../Components/Header";
 import Lander from "../Components/Lander";
 import Friends from "../Components/Friends";
+import Etc from "../Components/Etc";
 
 
 
@@ -19,6 +20,7 @@ const Home = () => {
         <main>
             <Lander />
             <Friends />
+            <Etc />
         </main>
 
 

@@ -118,7 +118,7 @@ $fontColor: #e6f3fe;
       gap: 10rem;
       height: 350rem;
       width: 100%;
-      justify-content: center;
+      justify-content: flex-end;
       align-items: center;
       overflow: hidden;
       img{
@@ -127,6 +127,19 @@ $fontColor: #e6f3fe;
       #sunset{
         transform: scale(1.75) translate(40px, -70px);
         z-index: 2;
+      }
+    }
+    .etc {
+      margin: 2rem;
+      h1{
+        text-align: center;
+      }
+      p{
+        text-align: justify;
+      }
+      a{
+        font-size: 1.5rem;
+        text-decoration: underline;
       }
     }
   }
