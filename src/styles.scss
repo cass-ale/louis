@@ -1,0 +1,133 @@
+:root{
+    background-color: #a0c2b4;
+    font-size: 100%;
+    /* width */
+    ::-webkit-scrollbar {
+        width: 0.35rem;
+      }
+
+      /* Track */
+      ::-webkit-scrollbar-track {
+        background: #0578A6;
+      }
+
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        background: #1bbc9b;
+        border-radius: 50px
+      }
+
+      /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
+        background: #e6f3fe;
+      }
+}
+
+$mainColor: #a0c2b4;
+$accentColor: #0578A6;
+$fontColor: #e6f3fe;
+
+
+
+@mixin mobile{
+    @media screen and (max-width: 1020px) {
+        @content;
+    }
+}
+
+
+
+.Home {
+    color: $fontColor;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    @include mobile {
+        display: flex;
+        justify-content: center;
+    }
+
+    header{
+        width: 100vw;
+        height: 3rem;
+        position: absolute;
+        top: 0;
+        background-color: $accentColor;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+
+        .headerText {
+            width: 100vw;
+            margin: 0 auto;
+            white-space: nowrap;
+            overflow: hidden;
+            position: absolute;
+          }
+
+          .headerText span {
+            display: inline-block;
+            padding-left: 100%;
+            animation: marquee 5s linear infinite;
+          }
+
+          .header2 span {
+            animation-delay: 2.5s;
+          }
+
+          @keyframes marquee {
+            0% {
+              transform: translate(0, 0);
+            }
+            100% {
+              transform: translate(-100%, 0);
+            }
+          }
+
+
+    }
+    main{
+      display: flex;
+      flex-direction: column;
+      background-color: $mainColor;
+    .lander{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 2rem;
+        height: 100vh;
+        gap: 5rem;
+        h1 {
+            font-size: 4.5rem;
+            margin-top: 0.25rem;
+            margin-bottom: 0.25rem;
+            text-align: center;
+        }
+        p {
+            font-size: 1.25rem;
+            text-align: justify;
+        }
+    }
+
+    .friends{
+      display: flex;
+      flex-direction: column;
+      gap: 10rem;
+      height: 350rem;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      img{
+        z-index: 5;
+      }
+      #sunset{
+        transform: scale(1.75) translate(40px, -70px);
+        z-index: 2;
+      }
+    }
+  }
+}
